@@ -4,7 +4,7 @@ namespace opgave1
 {
     public class Opgave1
     {
-        public static void DisplayName()
+        public static void Alice()
         {
             int age = 25;
             float height = 1.75f;
