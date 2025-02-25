@@ -15,12 +15,11 @@ namespace opgave2
             Console.WriteLine("Indtast fahrenheit: ");
             fahrenheit = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Indtast celcius: ");
+            Console.WriteLine("\nIndtast celcius: ");
             celcius = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Hej");
-            Console.WriteLine(celcius + "°C is " + celcius * (9 / 5) + 32 + "°F");
-            Console.WriteLine(fahrenheit + "°F is " + (fahrenheit - 32) * (5 / 9) + "°C");
+            Console.WriteLine($"\n{fahrenheit} °F is {(fahrenheit - 32) * 5 / 9} °F");
+            Console.WriteLine($"{celcius} °C is {celcius * 9 / 5 + 32} °F");
         }
     }
 }
