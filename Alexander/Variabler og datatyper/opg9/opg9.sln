@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "opg9", "opg9\opg9.csproj", "{1EDEE8FD-4E70-463A-8CE7-C152E24E36BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EDEE8FD-4E70-463A-8CE7-C152E24E36BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EDEE8FD-4E70-463A-8CE7-C152E24E36BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EDEE8FD-4E70-463A-8CE7-C152E24E36BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EDEE8FD-4E70-463A-8CE7-C152E24E36BE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

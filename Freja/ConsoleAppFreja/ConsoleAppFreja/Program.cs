@@ -2,6 +2,7 @@
 using opgave2;
 using opgave3;
 using opgave4;
+using opgave5;
 
 public class Program
 {
@@ -27,6 +28,10 @@ public class Program
         Console.ReadKey();
         Console.Clear();
 
+        Console.WriteLine("Opgave 5");
+        Opgave5.Cirkel();
+        Console.ReadKey();
+        Console.Clear();
 
         Console.ReadKey();
     }
