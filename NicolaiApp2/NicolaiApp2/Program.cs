@@ -4,59 +4,33 @@
     {
         static void Main(string[] args)
         {
-            int a = 3, b = 5;
-            Console.WriteLine($"{a} + {b} = {Sum(a, b)}");
 
-            string tekst = "Dette er en tekst";
-            Console.WriteLine($"Den originale tekst: {tekst} \nDen omvendte tekst: {Reversetxt(tekst)}");
-
-
-            string vokalTekst = "Denne tekst er bare for at tælle vokaler i";
-            Console.WriteLine($"Antallet af vokaler i den følgende tekst:\n{vokalTekst}\nAntal vokaler: {Vokaler(vokalTekst)}");
-
-            int circleRadius = 5;
-            double firkantLængde = 5, firkantBredde = 10;
-            Console.WriteLine($"Firkantens areal: {Areal(firkantLængde, firkantBredde)}");
-            Console.WriteLine($"Cirklens areal: {Areal(circleRadius)}");
-
-
-
-
-            Console.ReadLine();
-        }
-        static int Sum(int a, int b)
-        {
-            return a + b;
-        }
-
-        static string Reversetxt(string tekst)
-        {
-            return new string(tekst.Reverse().ToArray());
-        }
-
-        static int Vokaler(string vokalTekst)
-        {
-            string vokal = "aeiouyæøå";
-            int vokalSum = 0;
-
-            for (int i = 0; i < vokalTekst.Length; i++)
+            int menuValg;
+            do
             {
-                if (vokal.Contains(vokalTekst[i]))
-                {
-                    vokalSum++;
-                }
-            }
-            return vokalSum;
-        }
+                Console.Clear();
+                Console.WriteLine("Menu til at vælge dele af opgaven: ");
+                Console.WriteLine("1. Del 1 - Variabler og datatyper");
+                Console.WriteLine("2. Del 2 - Kontrolstrukturer");
+                Console.WriteLine("3. Del 3 - Funtkioner og metoder");
+                Console.WriteLine("4. Afslut menu");
 
-        static double Areal(double a, double b)
-        {
-            return a * b;
-        }
-        static double Areal(int r)
-        {
-            double PI = 3.1415926535897931;
-            return (PI * Math.Pow(r, 2));
+                menuValg = Convert.ToInt32(Console.ReadLine());
+
+                switch (menuValg)
+                {
+                    case 1:
+                        Del1.Løsning();
+                        break;
+                    case 2:
+                        Del2.Løsning();
+                        break;
+                    case 3:
+                        Del3.Løsning();
+                        break;
+                }
+            } while (menuValg != 4);
+
         }
     }
 
