@@ -50,7 +50,6 @@ public class Del2
 
         Console.Write("\nWhat number day is it currently of the week? From 1 - 7 ");
         int day = Convert.ToInt32(Console.ReadLine());
-        string dayName = "";
         switch (day)
         {
             case 1:
