@@ -1,5 +1,7 @@
 ﻿using opgave1;
 using opgave2;
+using opgave3;
+
 public class Program
 {
     public static void Main(string[] args)
@@ -15,9 +17,10 @@ public class Program
         Console.Clear();
 
         Console.WriteLine("Opgave 3");
-
-
-
+        Opgave3.AliceBMI();
+        Console.ReadKey();
+        Console.Clear();
+        
         Console.ReadKey();
     }
 }
