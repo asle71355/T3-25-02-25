@@ -4,6 +4,8 @@ using opgave3;
 using opgave4;
 using opgave5;
 using opgave6;
+using opgave7;
+
 
 public class Program
 {
@@ -38,7 +40,12 @@ public class Program
         Opgave6.IsSomething();
         Console.ReadKey();
         Console.Clear();
-        
+
+        Console.WriteLine("Opgave 7");
+        Opgave7.TjekTal();
+        Console.ReadKey();
+        Console.Clear();
+
         Console.ReadKey();
     }
 }
