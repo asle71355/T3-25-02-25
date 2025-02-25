@@ -14,20 +14,20 @@
                     float højde = Convert.ToSingle(Console.ReadLine());
                     Console.WriteLine("indtast sidelængde: ");
                     float sidelængde = Convert.ToSingle(Console.ReadLine());
-                    Console.WriteLine("arealet af firkanten er: " + firkantArea(højde, sidelængde));
+                    Console.WriteLine("arealet af firkanten er: " + Area(højde, sidelængde));
                     break;
                 case 2:
                     Console.WriteLine("Indtast radius af cirklen: ");
                     float radius = Convert.ToSingle(Console.ReadLine()); 
-                    Console.WriteLine("arealet af cirklen er: " + cirkelArea(radius));
+                    Console.WriteLine("arealet af cirklen er: " + Area(radius));
                     break;
             }
         }
-        static double firkantArea(double x, double y)
+        static double Area(double x, double y)
         {
             return x * y;
         }
-        static float cirkelArea(float r)
+        static float Area(float r)
         {
             return float.Pi * (float)Math.Pow(r, 2);
         }
