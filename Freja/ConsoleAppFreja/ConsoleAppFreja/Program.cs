@@ -32,7 +32,7 @@ public class Program
         Opgave5.Cirkel();
         Console.ReadKey();
         Console.Clear();
-
+        
         Console.ReadKey();
     }
 }
