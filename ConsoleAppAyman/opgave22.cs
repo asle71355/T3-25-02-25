@@ -6,16 +6,38 @@ namespace opgave22
     {
         public static void Solution()
         {
-            Console.WriteLine("Indtast et tal:");
+            Console.WriteLine("Indtast hvilken form det er (trekant eller rektangel):");
 
-            int userInput1 = Convert.ToInt32(Console.ReadLine());
+            string userForm = Console.ReadLine();
 
-            Console.WriteLine("Indtast et andet tal:");
+            if (userForm.ToLower() == "trekant")
+            {
+                Console.WriteLine("Indtast mål på grundlinje:");
 
-            int userInput2 = Convert.ToInt32(Console.ReadLine());
+                int userInput1 = Convert.ToInt32(Console.ReadLine());
 
-            ArealAfTrekant(ArealAfTrekant(userInput1, userInput2));
-            ArealAfRektangel(ArealAfRektangel(userInput1, userInput2));
+                Console.WriteLine("Indtast mål på højde:");
+
+                int userInput2 = Convert.ToInt32(Console.ReadLine());
+
+                ArealAfTrekant(ArealAfTrekant(userInput1, userInput2));
+            } 
+            else if (userForm.ToLower() == "rektangel")
+            {
+                Console.WriteLine("Indtast mål på længde:");
+
+                int userInput1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Indtast mål på bredde:");
+
+                int userInput2 = Convert.ToInt32(Console.ReadLine());
+
+                ArealAfRektangel(ArealAfRektangel(userInput1, userInput2));
+            }
+            else
+            {
+                Console.WriteLine("Ugyldig værdi.")
+            }
 
         }
 
