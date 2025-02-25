@@ -22,8 +22,6 @@ namespace opgave5
             double omkreds = 2 * pi * r;
 
             Console.WriteLine($"\nHer er resultatet:\nAreal: {areal}, Omkreds: {omkreds}");
-
-            Console.ReadKey();
         }
     }
 }
