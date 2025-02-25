@@ -1,5 +1,6 @@
 ﻿using opgave1;
 using opgave2;
+using opgave3;
 
 class Program
 {
@@ -7,7 +8,8 @@ class Program
     {
         Console.WriteLine(@"Menu
 1. Udskriv værdier på Alice.
-2. Konvertere fra Celcius til Fahrenheit og fra Fahrenheit til Celcius.");
+2. Konvertere fra Celcius til Fahrenheit og fra Fahrenheit til Celcius.
+3. Beregn BMI.");
 
 
         int userChoice = Convert.ToInt32(Console.ReadLine());
@@ -18,6 +20,9 @@ class Program
                 break;
             case 2:
                 Opgave2.ConvertTemp();
+                break;
+            case 3:
+                Opgave3.BMI();
                 break;
             default:
                 Console.WriteLine("Ugyldig værdi.");
