@@ -6,20 +6,42 @@ namespace opgave21
     {
         public static void Solution()
         {
-            Console.WriteLine("Indtast et tal:");
+            Console.WriteLine("Indtast hvilken form det er (Kube eller Cylinder):");
 
-            int userInput1 = Convert.ToInt32(Console.ReadLine());
+            string userForm = Console.ReadLine();
 
-            Console.WriteLine("Indtast andet tal:");
+            if (userForm.ToLower() == "kube")
+            {
+                Console.WriteLine("Indtast mål på højde:");
 
-            int userInput2 = Convert.ToInt32(Console.ReadLine());
+                int userInput1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Indtast trejde tal:");
+                Console.WriteLine("Indtast mål på bredde:");
 
-            int userInput3 = Convert.ToInt32(Console.ReadLine());
+                int userInput2 = Convert.ToInt32(Console.ReadLine());
 
-            RumfangKube(RumfangKube(userInput1, userInput2, userInput3));
-            RumfangCylinder(RumfangCylinder(userInput1, userInput2));
+                Console.WriteLine("Indtast mål på længde:");
+
+                int userInput3 = Convert.ToInt32(Console.ReadLine());
+
+                RumfangKube(RumfangKube(userInput1, userInput2, userInput3));
+            }
+            else if (userForm.ToLower() == "cylinder")
+            {
+                Console.WriteLine("Indtast mål på højde:");
+
+                int userInput1 = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("Indtast mål på radius:");
+
+                int userInput2 = Convert.ToInt32(Console.ReadLine());
+
+                RumfangCylinder(RumfangCylinder(userInput1, userInput2));
+            }
+            else
+            {
+                Console.WriteLine("Ugyldig værdi.")
+            }
 
         }
 

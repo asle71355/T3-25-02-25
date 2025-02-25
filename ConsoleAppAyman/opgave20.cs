@@ -6,7 +6,7 @@ namespace opgave20
     {
         public static void Solution()
         {
-            Console.WriteLine("Indtast et tal:");
+            Console.WriteLine("Indtast mål (længde af side/radius af cirkel):");
 
             int userInput = Convert.ToInt32(Console.ReadLine());
 
