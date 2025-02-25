@@ -2,9 +2,20 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main(String[] args)
         {
-            Console.WriteLine("Hello, venner!");
+            // Deklaration og initialisering af variabler
+            int age = 27;
+            float height = 1,77f;
+            double weight = 63;
+            char initial = L;
+            string name = "Laura";
+            bool isStudent = true;
+
+            // Udskriv værdierne til konsollen
+            Console.WriteLine($"Age: {age}, Height: {height},Weight: {weight}, Initial: {initial}, Name: {name}, Is Student: {isStudent}"); 
+
+            
 
         }
     }
