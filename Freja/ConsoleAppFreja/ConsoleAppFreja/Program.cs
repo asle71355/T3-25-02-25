@@ -1,6 +1,7 @@
 ﻿using opgave1;
 using opgave2;
 using opgave3;
+using opgave4;
 
 public class Program
 {
@@ -20,7 +21,13 @@ public class Program
         Opgave3.AliceBMI();
         Console.ReadKey();
         Console.Clear();
-        
+
+        Console.WriteLine("Opgave 4");
+        Opgave4.Sum();
+        Console.ReadKey();
+        Console.Clear();
+
+
         Console.ReadKey();
     }
 }
