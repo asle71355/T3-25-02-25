@@ -26,8 +26,7 @@ public class Program
         Opgave4.Sum();
         Console.ReadKey();
         Console.Clear();
-
-
+        
         Console.ReadKey();
     }
 }

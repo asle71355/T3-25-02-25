@@ -15,8 +15,6 @@ namespace opgave3
             double height = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Din BMI er " + weight / (height * height));
-
-            Console.ReadKey();
         }
     }
 }
