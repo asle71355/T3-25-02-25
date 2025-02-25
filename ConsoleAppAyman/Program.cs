@@ -10,6 +10,16 @@ using opgave9;
 using opgave10;
 using opgave11;
 using opgave12;
+using opgave13;
+using opgave14;
+using opgave15;
+using opgave16;
+using opgave17;
+using opgave18;
+using opgave19;
+using opgave20;
+using opgave21;
+using opgave22;
 
 class Program
 {
@@ -27,7 +37,17 @@ class Program
 9. Tjek om et år er et skudår.
 10. Udskriv en ugedag.
 11. Udskriv en besked baseret på en måned.
-12. Udskriv tallene fra 1 til 10.");
+12. Udskriv tallene fra 1 til 10 (for-loop).
+13. Udskriv tallene fra 1 til 10 (while-loop).
+14. Udskriv tallene fra 1 til 10 (do-while-loop).
+15. Udskriv sum af alle tal, fra 0 til valgt tal.
+16. Udskriv fakultet af et tal.
+17. Plusse to tal via metode med parametre og returntype
+18. Returnere en omvendt string
+19. Tæl vokaler i en string
+20. Beregn areal af firkant og cirkel ved at overloade metoder
+21. Beregn rumfang af en kube og cylinder ved at overloade metode
+22. Bregn areal af en trekant og en rektangel ved at overloade metode");
 
 
         int userChoice = Convert.ToInt32(Console.ReadLine());
@@ -68,6 +88,36 @@ class Program
                 break;
             case 12:
                 Opgave12.Solution();
+                break;
+            case 13:
+                Opgave13.Solution();
+                break;
+            case 14:
+                Opgave14.Solution();
+                break;
+            case 15:
+                Opgave15.Solution();
+                break;
+            case 16:
+                Opgave16.Solution();
+                break;
+            case 17:
+                Opgave17.Solution();
+                break;
+            case 18:
+                Opgave18.Solution();
+                break;
+            case 19:
+                Opgave19.Solution();
+                break;
+            case 20:
+                Opgave20.Solution();
+                break;
+            case 21:
+                Opgave21.Solution();
+                break;
+            case 22:
+                Opgave22.Solution();
                 break;
             default:
                 Console.WriteLine("Ugyldig værdi.");
