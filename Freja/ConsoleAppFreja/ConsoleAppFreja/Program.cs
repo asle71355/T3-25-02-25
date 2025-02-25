@@ -11,6 +11,10 @@ public class Program
 {
     public static void Main(string[] args)
     {
+
+
+
+
         Console.WriteLine("Opgave 1");
         Opgave1.Alice();
         Console.ReadKey();
