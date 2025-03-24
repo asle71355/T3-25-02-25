@@ -18,7 +18,7 @@ namespace opgave2
             Console.WriteLine("\nIndtast celcius: ");
             celcius = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"\n{fahrenheit} °F is {(fahrenheit - 32) * 5 / 9} °F");
+            Console.WriteLine($"\n{fahrenheit} °F is {(fahrenheit - 32) * 5 / 9} °C");
             Console.WriteLine($"{celcius} °C is {celcius * 9 / 5 + 32} °F");
         }
     }
